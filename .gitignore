@@ -3,5 +3,6 @@
 *.layout
 *.exe
 *.o
+*.md
 bin/
 obj/
