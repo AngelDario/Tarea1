@@ -88,7 +88,24 @@ int main()
     if(cuadrado==numero2){
         cout<<"el primer numero elevado al cuadrado es igual al segundo"<<endl;
     }
+  */
+//ejercicio 5
+    int a, i;
+        cout<<"Ingrese un numero : ", cin>>a;
 
+    for(i=2; i!=a; i++){
+        if(a%i==0){
+            cout<<"no es primo";
+            break;
+        }else if(i+1==a){
+            cout<<"es primo";
+            break;
+        }else if(i==2){
+        }
+    }
+
+
+/*
 //ejrcicio 6
         int n=10, i=1, primo=1, a=1;
 
@@ -104,6 +121,7 @@ int main()
                 a++;
             }
         }
+
 // ejercicio 7
    int numero5d, res, ent, cont=5;
 
@@ -121,10 +139,9 @@ int main()
     }
 //Ejercicio9
 
-*/
+
 	int a;
-	cout<<"Ingrese un anio: "<<endl;
-	cin>>a;
+	cout<<"Ingrese un anio : ", cin>>a;
 
 	if(a%100==0){
         if(a%400==0){
@@ -144,6 +161,7 @@ int main()
 
     cout<<"Ingrese un numero : ", cin>>x;
 
+    x=x-3;
     a=0;
     b=1;
 
@@ -155,7 +173,7 @@ int main()
         b=c;
         cout<<c<<",";
     }
-
+*/
 }
 
 
