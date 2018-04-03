@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-  /*
+/*
 //ejersicio1
     int edad;
 
@@ -105,7 +105,7 @@ int main()
             }
         }
 // ejercicio 7
-    int numero5d, res, ent, cont=5;
+   int numero5d, res, ent, cont=5;
 
     cout<< "ingrese un numero de 5 digitos", cin>>numero5d;
 
@@ -119,7 +119,42 @@ int main()
         cont=cont-1;
 
     }
+//Ejercicio9
 
+*/
+	int a;
+	cout<<"Ingrese un anio: "<<endl;
+	cin>>a;
+
+	if(a%100==0){
+        if(a%400==0){
+            cout<<"El anio es bisiesto"<<endl;
+        }else{
+            cout<<"El anio no es bisiesto"<<endl;
+        }
+    }else if (a%4==0){
+        cout<<"Es bisiesto"<<endl;
+    }else{
+        cout<<"El anio no es bisiesto"<<endl;
+    }
+
+//Ejericcio10
+
+    int x,a,b,c;
+
+    cout<<"Ingrese un numero : ", cin>>x;
+
+    a=0;
+    b=1;
+
+    cout<<a<<","<<b<<",";
+
+    for(int i=0;i<=x;i++){
+        c=a+b;
+        a=b;
+        b=c;
+        cout<<c<<",";
+    }
 
 }
 
