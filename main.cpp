@@ -143,6 +143,28 @@ int main()
         cont=cont-1;
 
     }
+*/	
+//Ejercicio8
+	
+	int c,a,d,b=10000,m=0;
+	
+	cout<<"Ingrese un numero de 5 digitos", cin>>c;
+	a=c;
+	
+	while(a>=1){
+		d=a%10;
+		m=m+(d*b);
+		b=b/10;
+		a=a/10;
+	}
+	if(c==m){
+		cout<<c<<" al revez es "<<m<<" por ende es palindrome"<<endl;
+	}
+	else{
+		cout<<c<<" al revez es "<<m<<" por ende NO es palindorme"<<endl;
+	}
+	
+/*
 //Ejercicio9
 
 
@@ -179,7 +201,7 @@ int main()
         b=c;
         cout<<c<<",";
     }
-*/
+
 //Ejercicio Extra
 
     int n, l=1;
@@ -190,6 +212,7 @@ int main()
         l=l*i;
     }
     cout<<"Factorial : "<<(long long) l;
+	*/
 }
 
 
