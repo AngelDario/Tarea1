@@ -36,25 +36,41 @@ int main()
 
 //ejersicio3
 
-    int x, y;
+    int x, y, z;
     float promedio;
 
-    promedio=(float)(x+y)/2;
+    promedio=(float)(x+y+z)/3;
 
     cout<<"Ingresa el primer numero : ", cin>>x;
     cout<<"Ingresa el segundo numero : ", cin>>y;
+	cout<<"Ingresa el tercer numero : ", cin>>z;
 
-    if (x>y){
+    if (x>y && x>z){
 
         cout<<"El mayor es : "<<x<<endl;
-        cout<<"El menor es : "<<y<<endl;
-
-    }else{
-
-        cout<<"El mayor es : "<<y<<endl;
-        cout<<"El menor es : "<<x<<endl;
-
-    }
+		
+		if(y>z){
+		cout<<"El menor es : "<<z<<endl;
+		}else{
+		cout<<"El menor es : "<<y<<endl;
+		}
+	}else if(y>x && y>z){
+		
+		cout<<"El mayor es"<<y<<endl;
+	
+		if(x>z){
+		cout<<"El menor es : "<<z<<endl;
+		}else{
+		cout<<"El menor es : "<<x<<endl;
+		}
+	}else{
+		cout<<"El mayor es : "<<z<<endl;
+		if(x>y){
+			cout<<"El menor es : "<<y<<endl;
+		}else{
+			cout<<"El menor es : "<<x<<endl;
+		}
+	}
 
     cout<<"El promedio es : "<<promedio<<endl;
 
@@ -88,29 +104,24 @@ int main()
     if(cuadrado==numero2){
         cout<<"el primer numero elevado al cuadrado es igual al segundo"<<endl;
     }
-
+*/
 //ejercicio 5
-    int a, i;
+    int a, c=0;
         cout<<"Ingrese un numero : ", cin>>a;
 
-    for(i=2; i!=a; i++){
-        if(a%i==0){
-            cout<<"no es primo";
-            break;
-        }else if(i+1==a){
-            cout<<"es primo";
-            break;
-        }else if(i==2){
-            cout<<"es primo";
-            break;
-        }else if(i==1){
-            cout<<"es primo";
-            break;
-        }
-    }
+    for(int i=2; i<a; i++){
+		if(a%i==0){
+			cout<<"No es primo"<<endl;
+			cout<<"El primer divisor es : "<< i <<endl;
+			c++;
+			break;
+		}
+	}
+	if(c==0){
+		cout<<"Es primo"<<endl;
+		}
 
-
-
+/*
 //ejrcicio 6
     int n;
     cout<<"Ingrese un numero : ", cin>>n;
@@ -143,7 +154,7 @@ int main()
         cont=cont-1;
 
     }
-*/	
+	
 //Ejercicio8
 	
 	int c,a,d,b=10000,m=0;
@@ -164,7 +175,7 @@ int main()
 		cout<<c<<" al revez es "<<m<<" por ende NO es palindorme"<<endl;
 	}
 	
-/*
+
 //Ejercicio9
 
 
